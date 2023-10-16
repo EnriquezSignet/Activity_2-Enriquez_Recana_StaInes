@@ -19,34 +19,29 @@
     />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-
-    <!-- header start -->
+    <!-- header -->
 
     <header class="header">
-      <a href="#" class="logo"> <img src="assets/logo.png" >
+      <a href="#" class="logo"> <img src="assets/logo.png" /></a>
 
-      <nav class="navbar">
+      <nav class="navbar" id="navbar">
         <a href="#">Home</a>
         <a href="#">Breeds</a>
-        <a href="#">Products</a>
-        <a href="#">Articles</a>
+        <a href="#">Adoption</a>
+        <a href="#brands">Brands</a>
         <a href="#">Merch</a>
         <a href="#">About Us</a>
       </nav>
 
       <div class="icons">
-        <a href="#" target="_blank" rel="noopener noreferrer">
-            <div id="ig-btn" class="fab fa-instagram"></div>
-        </a>
-
-        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="menu-btn" class="fas fa-bars" onclick="toggleMenu()"></div>
       </div>
     </header>
 
-    <!-- home section start -->
+    <!-- home -->
 
     <section class="home" id="home">
       <div class="content">
@@ -63,7 +58,54 @@
 
     <!-- end -->
 
+    <!-- animals -->
+
+    <section class="brands" id="brands">
+      <h2 class="heading">Best Brands for Cats</h2>
+
+      <div class="box-container">
+        <div class="box" style="margin-top: 0">
+          <img src="assets/prod1.png" alt="" />
+          <div class="content">
+            <a href="https://www.whiskas.com.ph/" class="btn">click for more</a>
+          </div>
+        </div>
+
+        <div class="box" style="margin-top: 40px">
+          <img src="assets/prod2.png" alt="" />
+          <div class="content">
+            <a href="https://www.purina.com/cats/cat-litter" class="btn"
+              >click for more</a
+            >
+          </div>
+        </div>
+
+        <div class="box" style="margin-top: 0px">
+          <img src="assets/prod3.png" alt="" />
+          <div class="content">
+            <a href="https://www.royalcanin.com/ph/cats/products" class="btn"
+              >click for more</a
+            >
+          </div>
+        </div>
+
+        <div class="box" style="margin-top: 40px">
+          <img src="assets/prod4.png" alt="" />
+          <div class="content">
+            <a href="https://and-a-half.ph/pet-express/" class="btn"
+              >click for more</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end -->
+
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js">
+            window.addEventListener('load', checkScreenWidth);
+      window.addEventListener('resize', checkScreenWidth);
+    </script>
   </body>
 </html>
