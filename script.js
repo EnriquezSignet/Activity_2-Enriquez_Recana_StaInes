@@ -17,7 +17,7 @@ window.onscroll = () => {
   navbar.classList.remove("active");
 };
 
-var swiper = new Swiper(".gallery-slider", {
+var swiper = new Swiper(" .adoption-slider", {
   grabCursor: true,
   loop: true,
   centeredSlides: true,

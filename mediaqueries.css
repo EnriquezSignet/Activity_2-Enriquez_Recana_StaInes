@@ -11,8 +11,16 @@
 }
 
 @media (max-width: 768px) {
+  .html {
+    font-size: 50%;
+  }
+
+  .header {
+    padding: 1rem;
+  }
+
   #menu-btn {
-    display: block;
+    display: inline-block;
   }
 
   .header .navbar {
