@@ -17,25 +17,6 @@ window.onscroll = () => {
   navbar.classList.remove("active");
 };
 
-var swiper = new Swiper(" .adoption-slider", {
-  grabCursor: true,
-  loop: true,
-  centeredSlides: true,
-  spaceBetween: 20,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    700: {
-      slidesPerView: 2,
-    },
-  },
-});
-
 function toggleMenu() {
   const navbar = document.getElementById("navbar");
   navbar.classList.toggle("active");
