@@ -207,6 +207,80 @@ section {
   text-align: center;
 }
 
+.slide-content {
+  margin: 0 40px;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.image-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  z-index: 1; /* Add this line to place it above the overlay */
+}
+
+.card {
+  height: 300px;
+  width: 275px;
+  border-radius: 25px;
+  background-color: #ffffff00;
+}
+
+.card-image {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: #ba70ff;
+  padding: 10px;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+}
+
+.name {
+  font-size: 34px;
+  font-weight: 800;
+  color: #485696;
+}
+
+.description {
+  font-size: 28px;
+  color: #ba70ff;
+  text-align: center;
+}
+
+.button {
+  border: black;
+  font-size: 12px;
+  color: #000000;
+  padding: 12px 30px;
+  background-color: #ffde59;
+  border-radius: 10px;
+  margin: 7px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #c262f7;
+}
+
 /* --- end --- */
 
 /* --- brands --- */
