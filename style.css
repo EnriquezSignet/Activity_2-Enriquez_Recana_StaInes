@@ -388,7 +388,11 @@ img {
 }
 
 .articles_content {
-  font-size: 15px;
+  font-size: 10px;
+  text-align: justify;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 1rem;
 }
 
 .color-container {
@@ -409,8 +413,8 @@ img {
 
 .abtn {
   font-size: 15px;
-  text-decoration: underline;
-  text-align: left;
+  background-color: #0074d9;
+  color: #fff;
 }
 
 .articles .boxes {
@@ -473,7 +477,6 @@ img {
   display: inline-block;
   margin-right: 10px;
   padding: 10px 0;
-  text-decoration: underline;
   border: none;
   background: none;
   cursor: pointer;
@@ -486,12 +489,12 @@ img {
 
 .articles .boxes .box .buttons .abtn:hover {
   background-color: transparent;
-  color: #ba70ff;
+  color: #485696;
 }
 
 .articles .boxes .box:hover .topic,
 .articles .boxes .box:hover {
-  color: #485696;
+  color: #383838;
   transition: all 0.4s ease;
 }
 
