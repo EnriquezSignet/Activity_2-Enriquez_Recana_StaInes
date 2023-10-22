@@ -500,6 +500,52 @@ img {
 
 /* end */
 
+/* merhcandise */
+
+.merchandise .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.merchandise .box-container .box {
+  background: var(--bg);
+  padding: 3rem;
+  text-align: center;
+  border-radius: 79% 51% 81% 19% / 58% 93% 7% 42%;
+}
+
+.merchandise .box-container .box:hover {
+  background: linear-gradient(90deg, #04000f, #c262f7, #04000f);
+  border-radius: 0.5rem;
+}
+
+.merchandise .box-container .box img {
+  height: 15.5rem;
+  width: 15.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.merchandise .box-container .box h3 {
+  font-size: 2.6rem;
+  color: var(--black);
+  padding: 1rem 0;
+}
+
+.merchandise .box-container .box .price {
+  font-size: 2.2rem;
+  color: var(--main);
+  padding: 0.5rem 0;
+}
+
+.merchandise .box-container .box p {
+  font-size: 1.5rem;
+  color: var(--black);
+  padding: 0.5rem 0;
+}
+
+/* end */
+
 /* contact */
 
 .contact {
@@ -537,3 +583,94 @@ img {
   resize: none;
   width: 100%;
 }
+
+/* footer */
+
+.footer {
+  background: url(assets/home_bg.gif) no-repeat;
+  background-size: cover;
+  padding: 3rem 7%;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--main);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+.footer .box-container .box .links i {
+  color: var(--main);
+  padding-right: 0.5rem;
+}
+
+.footer .box-container .box .links:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box .days {
+  margin-left: 2.2rem;
+  line-height: 0.2;
+}
+
+.footer .box-container .box .email {
+  width: 100%;
+  margin: 0.7rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: var(--white);
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+}
+
+.footer .box-container .box .share a {
+  height: 3rem;
+  width: 3rem;
+  line-height: 3rem;
+  color: var(--black);
+  background: var(--white);
+  font-size: 1.2rem;
+  border-radius: 5rem;
+  margin-right: 0.8rem;
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.footer .box-container .box .share a:hover {
+  background: var(--main);
+}
+
+.footer .credit {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2.5rem;
+  color: var(--black);
+  border-top: 0.2rem solid rgba(0, 0, 0, 0.2);
+}
+
+.footer .credit .link {
+  color: var(--main);
+}
+
+/* end */
