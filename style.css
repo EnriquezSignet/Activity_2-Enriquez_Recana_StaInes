@@ -552,7 +552,7 @@ img {
 /* about */
 
 .about {
-  background: linear-gradient(90deg, #04000f, #c262f7, #04000f);
+  background-image: url("assets/home_bg.gif");
 }
 .about .box-container {
   display: flex;
