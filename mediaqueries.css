@@ -93,6 +93,7 @@
 
   .abtn {
     font-size: 1.5rem;
+    background-color: #e7e7e7;
   }
 
   .articles .boxes {
@@ -105,5 +106,17 @@
   .articles .boxes .box {
     width: 100%;
     margin: 10px 0;
+  }
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
   }
 }
