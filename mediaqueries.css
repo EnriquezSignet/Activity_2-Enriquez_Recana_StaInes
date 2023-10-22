@@ -108,3 +108,14 @@
     margin: 10px 0;
   }
 }
+
+@media (max-width: 768px) {
+  .cats_preview .preview img {
+    height: 25rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
