@@ -704,3 +704,202 @@ img {
 }
 
 /* end */
+
+/* end */
+
+/* breeds */
+
+#breeds {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  text-transform: capitalize;
+}
+
+.breeds {
+  position: relative;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(90deg, #04000f, #c262f7, #04000f);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.container .title {
+  font-size: 3.5rem;
+  color: #444;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container .cats_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.container .cats_container .product {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  outline: 0.1rem solid #ccc;
+  outline-offset: -1.5rem;
+  cursor: pointer;
+}
+
+.container .cats_container .product:hover {
+  outline: 0.2rem solid #222;
+  outline-offset: 0;
+}
+
+.container .cats_container .product img {
+  height: 25rem;
+}
+
+.container .cats_container .product:hover img {
+  transform: scale(0.9);
+}
+
+.container .cats_container .product h3 {
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  color: #444;
+}
+
+.container .cats_container .product:hover h3 {
+  color: #27ae60;
+}
+
+.container .cats_container .product .rank {
+  font-size: 2rem;
+  color: #444;
+}
+
+.cats_preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; /* Ensure the preview is above other content */
+}
+
+.cats_preview.active {
+  display: flex;
+}
+
+.cats_preview .preview {
+  display: none;
+  padding: 1rem; /* Reduce padding */
+  text-align: center;
+  background: #fff;
+  position: relative;
+  margin: 2rem;
+  width: 40rem; /* Reduce width */
+  max-height: 60vh; /* Limit maximum height */
+  overflow-y: auto; /* Add vertical scroll if needed */
+}
+
+.cats_preview .preview.active {
+  display: inline-block;
+}
+
+.cats_preview .preview img {
+  height: 30rem;
+}
+
+.cats_preview .preview .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  color: #444;
+  font-size: 4rem;
+}
+
+.cats_preview .preview .fa-times:hover {
+  transform: rotate(90deg);
+}
+
+.cats_preview .preview h3 {
+  color: #444;
+  padding: 0.5rem 0;
+  font-size: 2.5rem;
+}
+
+.cats_preview .preview .cats {
+  padding: 1rem 0;
+  font-size: 1.7rem;
+}
+
+.cats_preview .preview .cats i {
+  color: #27ae60;
+}
+
+.cats_preview .preview .cats span {
+  color: #999;
+}
+
+.cats_preview .preview p {
+  line-height: 1.5;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.cats_preview .preview .rank {
+  padding: 1rem 0;
+  font-size: 2.5rem;
+  color: #27ae60;
+}
+
+.cats_preview .preview .buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.cats_preview .preview .buttons a {
+  flex: 1 1 16rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: #444;
+  border: 0.1rem solid #444;
+}
+
+.cats_preview .preview .buttons a.cart {
+  background: #444;
+  color: #fff;
+}
+
+.cats_preview .preview .buttons a.cart:hover {
+  background: #111;
+}
+
+.cats_preview .preview .buttons a.buy:hover {
+  background: #444;
+  color: #fff;
+}
+
+/* end */
