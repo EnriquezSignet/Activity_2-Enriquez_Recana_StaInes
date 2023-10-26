@@ -131,23 +131,3 @@
     width: 33.3333%;
   }
 }
-
-/*adoption*/
-@media screen and (min-width: 1120px) {
-  .container {
-    height: 100vh;
-  }
-
-  .card {
-    &__container {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    &__img {
-      width: 348px;
-    }
-    &__data {
-      width: 316px;
-      padding-inline: 2.5rem;
-    }
-  }
-}
