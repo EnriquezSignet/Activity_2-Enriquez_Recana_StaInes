@@ -25,10 +25,10 @@ function checkScreenWidth() {
 let preveiwContainer = document.querySelector(".cats_preview");
 let previewBox = preveiwContainer.querySelectorAll(".preview");
 
-document.querySelectorAll(".cats_container .product").forEach((product) => {
-  product.onclick = () => {
+document.querySelectorAll(".cats_container .breed_pic").forEach((breed_pic) => {
+  breed_pic.onclick = () => {
     preveiwContainer.style.display = "flex";
-    let name = product.getAttribute("data-name");
+    let name = breed_pic.getAttribute("data-name");
     previewBox.forEach((preview) => {
       let target = preview.getAttribute("data-target");
       if (name == target) {
@@ -43,4 +43,34 @@ previewBox.forEach((close) => {
     close.classList.remove("active");
     preveiwContainer.style.display = "none";
   };
+});
+
+var swiper = new Swiper(".slide-content", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  loop: true,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    950: {
+      slidesPerView: 3,
+    },
+  },
 });
