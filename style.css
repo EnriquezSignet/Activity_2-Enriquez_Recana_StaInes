@@ -211,12 +211,12 @@ section {
 
 .about .content .title {
   font-size: 4rem;
-  color: #f1eba7;
+  color: #ffde59;
 }
 
 .about .content p {
   font-size: 1.7rem;
-  color: #f1eba7;
+  color: white;
   padding: 1rem 0;
   line-height: 2;
 }
@@ -238,13 +238,13 @@ section {
 .about .content .icons-container .icons .fas {
   height: 5rem;
   font-size: 4rem;
-  color: #c262f7;
+  color: #ffffff;
 }
 
 .about .content .icons-container .icons h3 {
   padding-top: 1rem;
   font-size: 1.5rem;
-  color: #c262f7;
+  color: #ffffff;
   font-weight: normal;
 }
 
@@ -258,6 +258,7 @@ section {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   padding: 5rem;
+  background-image: url(assets/home_bg.gif);
 }
 
 .slide-container {
@@ -544,7 +545,7 @@ img {
 /* --- breeds --- */
 
 #breeds {
-  margin: 0;
+  margin: 50rem;
   padding: 0;
   box-sizing: border-box;
   outline: none;
@@ -948,7 +949,7 @@ body {
 /* --- footer --- */
 
 .footer {
-  background: linear-gradient(90deg, #04000f, #c262f7, #04000f);
+  background: transparent;
   background-size: cover;
   padding: 3rem 7%;
 }
@@ -963,17 +964,6 @@ body {
   font-size: 2.5rem;
   color: #ffde59;
   padding: 1rem 0;
-}
-
-/* gallery */
-
-#gallery {
-  margin: 0;
-  padding-left: 5rem;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  padding: 5rem;
-  background-image: url(assets/home_bg.gif);
 }
 
 .footer .box-container .box p {
