@@ -627,13 +627,13 @@ body {
   color: white;
 }
 
-
 /* end */
 
 /* about */
 
 .about {
   background: linear-gradient(90deg, #04000f, #c262f7, #04000f);
+}
 
 .cats_preview {
   position: fixed;
@@ -646,7 +646,6 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 2;
-
 }
 
 .cats_preview.active {
@@ -690,12 +689,10 @@ body {
   padding: 1rem 0;
   line-height: 2;
   text-align: justify;
-
 }
 
 .cats_preview .preview .fa-times:hover {
   transform: rotate(90deg);
-
 }
 
 .cats_preview .preview h3 {
@@ -703,7 +700,6 @@ body {
   padding: 0.5rem 0;
   font-size: 2.5rem;
 }
-
 
 .about .content .icons-container .icons {
   flex: 1 1 16rem;
@@ -716,11 +712,10 @@ body {
   height: 5rem;
   font-size: 4rem;
   color: #ffde59;
-
+}
 .title_characteristic {
   color: #141414;
   font-size: 2rem;
-
 }
 
 .content_characteristic {
@@ -728,7 +723,6 @@ body {
   font-size: 1.5rem;
   color: white;
   font-weight: normal;
-
 }
 
 .cats_preview .preview .cats {
@@ -783,7 +777,6 @@ body {
   margin-top: 1rem;
 }
 
-
 /* end */
 
 /* breeds */
@@ -797,11 +790,11 @@ body {
   text-decoration: none;
   transition: all 0.2s linear;
   text-transform: capitalize;
+}
 
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
-
 }
 
 .articles-img {
@@ -972,7 +965,6 @@ body {
   padding: 1rem 0;
 }
 
-
 /* gallery */
 
 #gallery {
@@ -982,6 +974,8 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 5rem;
   background-image: url(assets/home_bg.gif);
+}
+
 .footer .box-container .box p {
   font-size: 1.5rem;
   line-height: 1.8;
