@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300;400;500;700&display=swap");
 
-:root {
-  --main: #ffde59;
-  --bg: #f1e1d2;
-  --black: #000;
-  --white: #fff;
-  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-}
-
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -502,6 +494,7 @@ img {
 
 /* merhcandise */
 .merchandise {
+  min-height: 100vh;
   background: linear-gradient(90deg, #04000f, #c262f7, #04000f);
 }
 
@@ -512,38 +505,37 @@ img {
 }
 
 .merchandise .box-container .box {
-  background: var(--bg);
-  padding: 3rem;
+  padding: 9rem;
   text-align: center;
-  border-radius: 79% 51% 81% 19% / 58% 93% 7% 42%;
 }
 
 .merchandise .box-container .box:hover {
-  background: linear-gradient(90deg, #04000f, #c262f7, #04000f);
-  border-radius: 0.5rem;
+  border: solid #ffde59 5px;
+  background: transparent;
+  border-radius: 3rem;
 }
 
 .merchandise .box-container .box img {
   height: 15.5rem;
   width: 15.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .merchandise .box-container .box h3 {
   font-size: 2.6rem;
-  color: var(--black);
+  color: white;
   padding: 1rem 0;
 }
 
 .merchandise .box-container .box .price {
   font-size: 2.2rem;
-  color: var(--main);
+  color: white;
   padding: 0.5rem 0;
 }
 
 .merchandise .box-container .box p {
   font-size: 1.5rem;
-  color: var(--black);
+  color: white;
   padding: 0.5rem 0;
 }
 
@@ -705,6 +697,8 @@ img {
 
 /* end */
 
+/* end */
+
 /* breeds */
 
 #breeds {
@@ -739,7 +733,7 @@ body {
 
 .container .title {
   font-size: 3.5rem;
-  color: #ffde59;
+  color: #444;
   margin-bottom: 3rem;
   text-transform: uppercase;
   text-align: center;
@@ -751,44 +745,42 @@ body {
   gap: 2rem;
 }
 
-.container .cats_container .breed_pic {
+.container .cats_container .product {
   text-align: center;
   padding: 3rem 2rem;
-  background: transparent;
-  box-shadow: transparent;
-  outline: transparent;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  outline: 0.1rem solid #ccc;
   outline-offset: -1.5rem;
   cursor: pointer;
 }
 
-.container .cats_container .breed_pic:hover {
-  outline: 5rem #ffde59;
-  border-radius: 12px;
-  box-shadow: 0 20px 20px #ba70ff;
-  outline-offset: 5;
+.container .cats_container .product:hover {
+  outline: 0.2rem solid #222;
+  outline-offset: 0;
 }
 
-.container .cats_container .breed_pic img {
+.container .cats_container .product img {
   height: 25rem;
 }
 
-.container .cats_container .breed_pic:hover img {
+.container .cats_container .product:hover img {
   transform: scale(0.9);
 }
 
-.container .cats_container .breed_pic h3 {
+.container .cats_container .product h3 {
   padding: 0.5rem 0;
   font-size: 2rem;
-  color: #ffde59;
+  color: #444;
 }
 
-.container .cats_container .breed_pic:hover h3 {
-  color: #c8abff;
+.container .cats_container .product:hover h3 {
+  color: #27ae60;
 }
 
-.container .cats_container .breed_pic .rank {
-  font-size: 1.5rem;
-  color: white;
+.container .cats_container .product .rank {
+  font-size: 2rem;
+  color: #444;
 }
 
 .cats_preview {
@@ -812,7 +804,7 @@ body {
   display: none;
   padding: 1rem; /* Reduce padding */
   text-align: center;
-  background: #ffde59;
+  background: #fff;
   position: relative;
   margin: 2rem;
   width: 40rem; /* Reduce width */
@@ -833,7 +825,7 @@ body {
   top: 1rem;
   right: 1.5rem;
   cursor: pointer;
-  color: #3a0955;
+  color: #444;
   font-size: 4rem;
 }
 
@@ -842,19 +834,9 @@ body {
 }
 
 .cats_preview .preview h3 {
-  color: #141414;
+  color: #444;
   padding: 0.5rem 0;
   font-size: 2.5rem;
-}
-
-.title_characteristic {
-  color: #141414; /* Change 'red' to the color you want */
-  font-size: 2rem;
-}
-
-.content_characteristic {
-  color: #141414; /* Change 'blue' to the color you want */
-  font-size: 1.5rem;
 }
 
 .cats_preview .preview .cats {
@@ -863,136 +845,53 @@ body {
 }
 
 .cats_preview .preview .cats i {
-  color: #3a0955;
+  color: #27ae60;
 }
 
 .cats_preview .preview .cats span {
-  color: #3a0955;
+  color: #999;
 }
 
 .cats_preview .preview p {
   line-height: 1.5;
   padding: 1rem 0;
-  font-size: 1.5rem;
-  color: #3a0955;
+  font-size: 1.6rem;
+  color: #777;
 }
 
 .cats_preview .preview .rank {
   padding: 1rem 0;
-  font-size: 1.5rem;
-  color: #3a0955;
+  font-size: 2.5rem;
+  color: #27ae60;
 }
 
-/* end */
-
-/* gallery */
-
-#gallery {
-  margin: 0;
-  padding-left: 5rem;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  padding: 5rem;
-}
-
-.slide-container {
-  max-height: 500px; /* Set a fixed height for the slide container */
-  overflow: hidden;
-  /* Add the following CSS to make all slide containers have the same height */
-  height: equal-height;
-}
-
-.slide-content {
-  margin: 0 40px;
-  overflow: hidden;
-}
-.card {
-  border-radius: 25px;
-  background-color: #fff;
-  width: 400px; /* Set a fixed width for the card container */
-  height: 400px; /* Set a fixed height for the card container */
-  overflow: hidden; /* Hide overflow content */
+.cats_preview .preview .buttons {
   display: flex;
-  flex-direction: column;
-}
-
-.image-content,
-.card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 14px;
-}
-.image-content {
-  position: relative;
-  row-gap: 5px;
-  padding: 25px 0;
-}
-
-.card-image {
-  position: relative;
-  height: 200px; /* Adjust the height as needed */
-  width: 300px; /* Adjust the width as needed */
-  background: #fff;
-  padding: 3px;
-  border-radius: 25px; /* Apply border-radius to make it a rectangle */
-}
-
-.card-image .card-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 25px; /* Apply border-radius to make it a rectangle */
-}
-
-.fact {
-  font-size: 15px;
-  font-weight: 900;
-  color: #141414;
-  font-style: bold;
-}
-.description {
-  color: #3a0955;
-  font-size: 12px;
-  text-align: justify;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
   margin-top: 1rem;
 }
 
-.swiper-button-next.swiper-navBtn {
-  color: white;
-  transition: color 0.3s ease;
+.cats_preview .preview .buttons a {
+  flex: 1 1 16rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  color: #444;
+  border: 0.1rem solid #444;
 }
 
-.swiper-button-prev.swiper-navBtn {
-  color: white;
-  transition: color 0.3s ease;
+.cats_preview .preview .buttons a.cart {
+  background: #444;
+  color: #fff;
 }
 
-.swiper-navBtn:hover {
-  color: #ffde59;
+.cats_preview .preview .buttons a.cart:hover {
+  background: #111;
 }
-.swiper-navBtn::before,
-.swiper-navBtn::after {
-  font-size: 35px;
-}
-.swiper-button-next {
-  right: 0;
-}
-.swiper-button-prev {
-  left: 0;
-}
-.swiper-pagination-bullet {
-  color: #383838;
-  opacity: 1;
-}
-.swiper-pagination-bullet-active {
-  color: #383838;
-}
-.card.swiper-slide {
-  height: 500px;
-  width: fit-content;
+
+.cats_preview .preview .buttons a.buy:hover {
+  background: #444;
+  color: #fff;
 }
 
 /* end */
