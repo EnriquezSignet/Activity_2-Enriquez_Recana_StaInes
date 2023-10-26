@@ -1,24 +1,22 @@
-const navbar = document.querySelector(".header .navbar");
-
-document.querySelector("#menu-btn").onclick = () => {
-  navbar.classList.toggle("active");
-};
-
-window.onscroll = () => {
-  navbar.classList.remove("active");
-};
-
 function toggleMenu() {
   const navbarElement = document.getElementById("navbar");
   navbarElement.classList.toggle("active");
 }
 
+function closeMenu() {
+  const navbarElement = document.getElementById("navbar");
+  navbarElement.classList.remove("active");
+}
+
+window.onscroll = () => {
+  closeMenu(); // Close the menu when scrolling
+};
+
 function checkScreenWidth() {
   const windowWidth = window.innerWidth;
 
   if (windowWidth > 768) {
-    const navbarElement = document.getElementById("navbar");
-    navbarElement.classList.remove("active");
+    closeMenu(); // Close the menu if the screen width is greater than 768
   }
 }
 

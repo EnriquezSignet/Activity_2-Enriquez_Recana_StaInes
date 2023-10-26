@@ -46,7 +46,7 @@ section {
 
 .btn {
   font-size: 1.7rem;
-  display: inline-block;
+  display: block;
   background: #e7e7e7;
   color: black;
   box-shadow: var(--box-shadow);
@@ -56,6 +56,8 @@ section {
   z-index: 0;
   position: relative;
   overflow: hidden;
+  width: 20rem;
+  text-align: center;
 }
 
 .btn::before {
@@ -101,12 +103,12 @@ section {
 
 .header .navbar a {
   font-size: 1.7rem;
-  color: #141414;
+  color: white;
   margin: 0 1rem;
 }
 
 .header .navbar a:hover {
-  color: #485696;
+  color: #ffde59;
 }
 
 .header .icons div {
@@ -156,7 +158,7 @@ section {
   justify-content: space-between;
   display: flex;
   align-items: center;
-  background: url(assets/home_bg.gif) no-repeat;
+  background: url(assets/home_bg.gif);
   background-size: cover;
   background-position: top;
 }
@@ -544,7 +546,7 @@ img {
 /* about */
 
 .about {
-  background-image: url("assets/home_bg.gif");
+  background: linear-gradient(90deg, #04000f, #c262f7, #04000f);
 }
 .about .box-container {
   display: flex;
@@ -567,14 +569,15 @@ img {
 
 .about .content .title {
   font-size: 4rem;
-  color: #f1eba7;
+  color: #ffde59;
 }
 
 .about .content p {
   font-size: 1.7rem;
-  color: #f1eba7;
+  color: white;
   padding: 1rem 0;
   line-height: 2;
+  text-align: justify;
 }
 
 .about .content .icons-container {
@@ -594,13 +597,13 @@ img {
 .about .content .icons-container .icons .fas {
   height: 5rem;
   font-size: 4rem;
-  color: #c262f7;
+  color: #ffde59;
 }
 
 .about .content .icons-container .icons h3 {
   padding-top: 1rem;
   font-size: 1.5rem;
-  color: #c262f7;
+  color: white;
   font-weight: normal;
 }
 
@@ -694,8 +697,6 @@ img {
 .footer .credit .link {
   color: var(--main);
 }
-
-/* end */
 
 /* end */
 
@@ -885,6 +886,7 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   padding: 5rem;
+  background-image: url(assets/home_bg.gif);
 }
 
 .slide-container {
