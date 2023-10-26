@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@300;400;500;700&display=swap");
 
-:root {
-  --main: #ffde59;
-  --bg: #f1e1d2;
-  --black: #000;
-  --white: #fff;
-  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-}
-
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -502,6 +494,7 @@ img {
 
 /* merhcandise */
 .merchandise {
+  min-height: 100vh;
   background: linear-gradient(90deg, #04000f, #c262f7, #04000f);
 }
 
@@ -512,38 +505,37 @@ img {
 }
 
 .merchandise .box-container .box {
-  background: var(--bg);
-  padding: 3rem;
+  padding: 9rem;
   text-align: center;
-  border-radius: 79% 51% 81% 19% / 58% 93% 7% 42%;
 }
 
 .merchandise .box-container .box:hover {
-  background: linear-gradient(90deg, #04000f, #c262f7, #04000f);
-  border-radius: 0.5rem;
+  border: solid #ffde59 5px;
+  background: transparent;
+  border-radius: 3rem;
 }
 
 .merchandise .box-container .box img {
   height: 15.5rem;
   width: 15.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .merchandise .box-container .box h3 {
   font-size: 2.6rem;
-  color: var(--black);
+  color: white;
   padding: 1rem 0;
 }
 
 .merchandise .box-container .box .price {
   font-size: 2.2rem;
-  color: var(--main);
+  color: white;
   padding: 0.5rem 0;
 }
 
 .merchandise .box-container .box p {
   font-size: 1.5rem;
-  color: var(--black);
+  color: white;
   padding: 0.5rem 0;
 }
 
@@ -903,3 +895,127 @@ body {
 }
 
 /* end */
+
+img {
+  display: grid;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  padding-block: 5rem;
+}
+
+.card__container {
+  display: flex;
+  gap: 5rem;
+  row-gap: 3.6rem;
+}
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 500px;
+  border-radius: 1.5rem;
+}
+
+.card__data {
+  width: 250px;
+  background-color: white;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+
+.card__description {
+  display: block;
+  font-size: 10px;
+  margin-bottom: 0.25rem;
+}
+
+.card__title {
+  font-size: 12px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 0.75rem;
+}
+
+.card__button {
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 500;
+  color: black;
+}
+
+.card__button:hover {
+  text-decoration: underline;
+}
+
+/* Naming animations in hover */
+.card__article:hover .card__data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.card__article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+  animation: remove-data 1s forwards;
+}
+
+/* Card animation */
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
