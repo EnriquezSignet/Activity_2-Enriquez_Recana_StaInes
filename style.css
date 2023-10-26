@@ -219,8 +219,14 @@ section {
   color: white;
   padding: 1rem 0;
   line-height: 2;
+  text-align: justify;
 }
 
+.about .content .icons-container .icons .fas {
+  height: 5rem;
+  font-size: 4rem;
+  color: #ffde59;
+}
 .about .content .icons-container {
   display: flex;
   flex-wrap: wrap;
@@ -235,12 +241,6 @@ section {
   padding: 3rem 2rem;
 }
 
-.about .content .icons-container .icons .fas {
-  height: 5rem;
-  font-size: 4rem;
-  color: #ffffff;
-}
-
 .about .content .icons-container .icons h3 {
   padding-top: 1rem;
   font-size: 1.5rem;
@@ -250,20 +250,20 @@ section {
 
 /* --- end --- */
 
-/* --- gallery --- */
+/* gallery */
 
 #gallery {
   margin: 0;
   padding-left: 5rem;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   padding: 5rem;
   background-image: url(assets/home_bg.gif);
 }
 
 .slide-container {
-  max-height: 500px;
+  max-height: 500px; /* Set a fixed height for the slide container */
   overflow: hidden;
+  /* Add the following CSS to make all slide containers have the same height */
   height: equal-height;
 }
 
@@ -274,9 +274,9 @@ section {
 .card {
   border-radius: 25px;
   background-color: #fff;
-  width: 400px;
-  height: 400px;
-  overflow: hidden;
+  width: 400px; /* Set a fixed width for the card container */
+  height: 400px; /* Set a fixed height for the card container */
+  overflow: hidden; /* Hide overflow content */
   display: flex;
   flex-direction: column;
 }
@@ -296,29 +296,29 @@ section {
 
 .card-image {
   position: relative;
-  height: 200px;
-  width: 300px;
+  height: 200px; /* Adjust the height as needed */
+  width: 300px; /* Adjust the width as needed */
   background: #fff;
   padding: 3px;
-  border-radius: 25px;
+  border-radius: 25px; /* Apply border-radius to make it a rectangle */
 }
 
 .card-image .card-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 25px;
+  border-radius: 25px; /* Apply border-radius to make it a rectangle */
 }
 
 .fact {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 900;
   color: #141414;
   font-style: bold;
 }
 .description {
   color: #3a0955;
-  font-size: 12px;
+  font-size: 15px;
   text-align: justify;
   margin-left: 4rem;
   margin-right: 4rem;
@@ -360,7 +360,7 @@ section {
   width: fit-content;
 }
 
-/* --- end --- */
+/* end */
 
 /* --- brands --- */
 
@@ -460,7 +460,8 @@ img {
 
 .bttn {
   color: #000000;
-
+  padding: 1rem;
+  margin: 0.5rem;
   font-size: 14px;
   text-transform: uppercase;
   border-radius: 10px;
@@ -485,7 +486,7 @@ img {
   flex-wrap: wrap;
   list-style: none;
   margin: 1rem;
-  padding: 1.5rem;
+  padding: 0.5rem;
 }
 
 .cards_item {
@@ -544,8 +545,9 @@ img {
 
 /* --- breeds --- */
 
-#breeds {
-  margin: 50rem;
+.breeds,
+body {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
@@ -553,15 +555,7 @@ img {
   text-decoration: none;
   transition: all 0.2s linear;
   text-transform: capitalize;
-}
-
-.breeds {
   position: relative;
-}
-
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 body {
@@ -628,14 +622,6 @@ body {
   color: white;
 }
 
-/* end */
-
-/* about */
-
-.about {
-  background: linear-gradient(90deg, #04000f, #c262f7, #04000f);
-}
-
 .cats_preview {
   position: fixed;
   top: 0;
@@ -680,49 +666,32 @@ body {
   cursor: pointer;
   color: #3a0955;
   font-size: 4rem;
-
-  color: #ffde59;
-}
-
-.about .content p {
-  font-size: 1.7rem;
-  color: white;
-  padding: 1rem 0;
-  line-height: 2;
-  text-align: justify;
 }
 
 .cats_preview .preview .fa-times:hover {
   transform: rotate(90deg);
 }
 
+.cats_preview .preview h3,
+.title_characteristic,
+.content_characteristic,
+.cats_preview .preview .cats,
+.cats_preview .preview p,
+.cats_preview .preview .rank {
+  color: #141414;
+}
+
 .cats_preview .preview h3 {
-  color: #141414;
-  padding: 0.5rem 0;
   font-size: 2.5rem;
+  padding: 0.5rem 0;
 }
 
-.about .content .icons-container .icons {
-  flex: 1 1 16rem;
-  text-align: center;
-  background: #3a0955;
-  padding: 3rem 2rem;
-}
-
-.about .content .icons-container .icons .fas {
-  height: 5rem;
-  font-size: 4rem;
-  color: #ffde59;
-}
 .title_characteristic {
-  color: #141414;
   font-size: 2rem;
 }
 
 .content_characteristic {
-  color: #141414;
   font-size: 1.5rem;
-  color: white;
   font-weight: normal;
 }
 
@@ -731,10 +700,7 @@ body {
   font-size: 1.7rem;
 }
 
-.cats_preview .preview .cats i {
-  color: #3a0955;
-}
-
+.cats_preview .preview .cats i,
 .cats_preview .preview .cats span {
   color: #3a0955;
 }
@@ -743,7 +709,6 @@ body {
   line-height: 1.5;
   padding: 1rem 0;
   font-size: 1.5rem;
-  color: #3a0955;
 }
 
 .cats_preview .preview .rank {
@@ -771,26 +736,11 @@ body {
 }
 
 .articles_content {
-  font-size: 10px;
+  font-size: 12px;
   text-align: justify;
   margin-left: 4rem;
   margin-right: 4rem;
   margin-top: 1rem;
-}
-
-/* end */
-
-/* breeds */
-
-#breeds {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-decoration: none;
-  transition: all 0.2s linear;
-  text-transform: capitalize;
 }
 
 .color-container {
@@ -897,27 +847,28 @@ body {
 
 /* --- end --- */
 
-/* --- merhcandise --- */
+/* merhcandise */
 .merchandise {
   min-height: 100vh;
   background: linear-gradient(90deg, #04000f, #c262f7, #04000f);
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .merchandise .box-container {
+  max-width: 900px; /* Set your desired maximum width */
+  margin: 0 auto; /* Center the container horizontally on the page */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 2rem;
-}
-
-.merchandise .box-container .box {
-  padding: 9rem;
-  text-align: center;
+  grid-template-columns: repeat(4, 1fr); /* Set 4 columns */
+  gap: 4rem;
+  text-align: center; /* Center text within each box */
+  height: auto;
 }
 
 .merchandise .box-container .box:hover {
   border: solid #ffde59 5px;
   background: transparent;
-  border-radius: 3rem;
 }
 
 .merchandise .box-container .box img {
@@ -944,7 +895,7 @@ body {
   padding: 0.5rem 0;
 }
 
-/* --- end --- */
+/* end */
 
 /* --- footer --- */
 
@@ -952,6 +903,7 @@ body {
   background: transparent;
   background-size: cover;
   padding: 3rem 7%;
+  padding-top: 10rem;
 }
 
 .footer .box-container {
