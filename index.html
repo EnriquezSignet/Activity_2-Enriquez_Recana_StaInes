@@ -13,6 +13,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Swiper CSS-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
@@ -41,13 +43,16 @@
     <div id="menu-btn" class="fas fa-bars" onclick="toggleMenu()"></div>
   </div>
 
+ 
+
+
     </header>
 
     <!-- home -->
 
     <section class="home" id="home">
       <div class="content">
-        <h3>
+        <h3 data-aos="fade-right">
           Who run the world? <br />
           It's the feline <br />
           friends
@@ -57,7 +62,7 @@
         
       </div>
 
-      <img src="assets/home-cat-icon.png" alt="" class="cat" />
+      <img  data-aos="fade-left" src="assets/home-cat-icon.png" alt="" class="cat" />
     </section>
 
     <!-- end -->
@@ -66,13 +71,13 @@
 
     <section class="about" id="about">
       <div class="box-container">
-        <div class="image">
+        <div data-aos="fade-right" class="image">
           <img src="assets/about_pic.png" alt="" />
         </div>
 
         <div class="content">
-          <h3 class="title">Welcome to our cat enthusiast's haven!</h3>
-          <p>
+          <h3  data-aos="zoom-in-up" class="title">Welcome to our cat enthusiast's haven!</h3>
+          <p  data-aos="zoom-in-up">
             Cat lovers, unite! The website is dedicated to showing our care for
             our feline cats. The developers want to inform you about the
             different breeds of cats and provide you with health tips to help
@@ -86,15 +91,15 @@
           </p>
 
           <div class="icons-container">
-            <div class="icons">
+            <div data-aos="flip-right" class="icons">
               <i class="fas fa-solid fa-cat"></i>
               <h3>We Care</h3>
             </div>
-            <div class="icons">
+            <div data-aos="flip-right" class="icons">
               <i class="fas fa-bullhorn"></i>
               <h3>We Inform</h3>
             </div>
-            <div class="icons">
+            <div data-aos="flip-right" class="icons">
               <i class="fas fa-book-open"></i>
               <h3>Provide Articles</h3>
             </div>
@@ -109,13 +114,13 @@
     <!-- gallery -->
 
        <section class="gallery" id="gallery">
-        <h2 class="heading">DID YOU KNOW?</h2>
+        <h2  data-aos="fade-down" class="heading">DID YOU KNOW?</h2>
 
         <div class="slide-container swiper">
             <div class="slide-content">
                 <div class="card-wrapper swiper-wrapper">
  <!-- 1 -->
-                    <div class="card swiper-slide">
+                    <div data-aos="flip-left"  class="card swiper-slide">
                         <div class="image-content">
                             <div class="card-image">
                                <img src="assets/f9.gif" class="card-img">
@@ -127,7 +132,7 @@
                         </div>
                     </div>
  <!-- 2 -->
-                    <div class="card swiper-slide">
+                    <div data-aos="flip-left" class="card swiper-slide">
                         <div class="image-content">
                             <div class="card-image">
                                    <img src="assets/f1.gif" alt="" class="card-img">
@@ -139,7 +144,7 @@
                         </div>
                     </div>
  <!-- 3 -->
-                    <div class="card swiper-slide">
+                    <div data-aos="flip-left" class="card swiper-slide">
                         <div class="image-content">
                             <div class="card-image">
                                  <img src="assets/f2.gif" alt="" class="card-img">
@@ -151,7 +156,7 @@
                         </div>
                     </div>
  <!-- 4 -->
-                    <div class="card swiper-slide">
+                    <div data-aos="flip-left" class="card swiper-slide">
                         <div class="image-content">
                             <div class="card-image">
                                     <img src="assets/f3.gif" alt="" class="card-img">
@@ -242,17 +247,17 @@
     <!-- brands -->
 
     <section class="brands" id="brands">
-      <h2 class="heading">Best Brands for Cats</h2>
+      <h2 data-aos="fade-up" class="heading">Best Brands for Cats</h2>
 
       <div class="box-container">
-        <div class="box" style="margin-top: 0">
+        <div  data-aos="flip-up" class="box" style="margin-top: 0">
           <img src="assets/prod1.png" alt="" />
           <div class="content">
             <a href="https://www.whiskas.com.ph/" class="btn">click for more</a>
           </div>
         </div>
 
-        <div class="box" style="margin-top: 40px">
+        <div  data-aos="flip-up" class="box" style="margin-top: 40px">
           <img src="assets/prod2.png" alt="" />
           <div class="content">
             <a href="https://www.purina.com/cats/cat-litter" class="btn"
@@ -261,7 +266,7 @@
           </div>
         </div>
 
-        <div class="box" style="margin-top: 0px">
+        <div  data-aos="flip-up" class="box" style="margin-top: 0px">
           <img src="assets/prod3.png" alt="" />
           <div class="content">
             <a href="https://www.royalcanin.com/ph/cats/products" class="btn"
@@ -270,7 +275,7 @@
           </div>
         </div>
 
-        <div class="box" style="margin-top: 40px">
+        <div  data-aos="flip-up" class="box" style="margin-top: 40px">
           <img src="assets/prod4.png" alt="" />
           <div class="content">
             <a href="https://and-a-half.ph/pet-express/" class="btn"
@@ -288,15 +293,15 @@
 
     <section class="adoption" id="adoption">
       <div class="content">
-        <h2 class="heading">Adopt a Cat</h2>
-        <p>
+        <h2 data-aos="flip-left" class="heading">Adopt a Cat</h2>
+        <p data-aos="fade-right">
           These adoptable cats are all spayed/neutered (kapon) and vaccinated.
           They can only be adopted as strictly indoor pets to be sure that they
           won’t be subjected to further cruelty or neglect.
         </p>
 
         <ul class="cards">
-          <li class="cards_item">
+          <li  class="cards_item">
             <div class="card">
               <div class="card_image">
                 <a href="https://paws.org.ph/lot/">
@@ -429,7 +434,7 @@
     <!-- Merchandise -->
 
     <section class="merchandise" id="merchandise">
-      <h2 class="heading">
+      <h2  data-aos="zoom-in" class="heading">
         Help us create a better tomorrow for our feline cats
       </h2>
 
@@ -568,7 +573,7 @@
     <!-- end -->
 
 
-     <!-- breeds -->
+    <!-- breeds -->
     <section class="breeds" id="breeds"></section>
 
     <div class="container">
@@ -837,7 +842,7 @@
 
       <div class="preview" data-target="p-8">
         <i class="fas fa-times"></i>
-        <img src="assets/breed-8-sphynx.png" alt="" />
+        <img src="assets/breed-8" alt="" />
         <h3> Sphynx <h3>
         <div class="cats">
           <i class="fas fa-cat"></i>
@@ -969,9 +974,8 @@
       </div>
     </div>
     </section>
-
-        
- <!-- end -->
+ 
+    <!-- end -->
     <!-- footer -->
 
     <section class="footer">
@@ -1008,7 +1012,6 @@
             the Philippines</a
           >
         </div>
-
 
         <div class="box">
           <h3>Newsletter</h3>
@@ -1048,11 +1051,25 @@
     <!-- JavaScript -->
       
     <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
-     </body>
-</html>
+   
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <script src="script.js">
+  <script>
+  AOS.init();
+</script>
+  
+<script src="script.js">
       window.addEventListener('load', checkScreenWidth);
       window.addEventListener('resize', checkScreenWidth);
   </script>
+  </body>
 </html>
+
+  <!-- <script src="script.js">
+      window.addEventListener('load', checkScreenWidth);
+      window.addEventListener('resize', checkScreenWidth);
+  </script>
+
+ 
+
+</html> -->
