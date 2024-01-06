@@ -669,6 +669,7 @@ body {
 }
 
 .cats_preview .preview .fa-times:hover {
+  color: black;
   transform: rotate(90deg);
 }
 
