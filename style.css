@@ -640,7 +640,7 @@ body {
 }
 
 .cats_preview .preview {
-  display: w none;
+  display: none;
   padding: 1rem;
   text-align: center;
   background: #ffde59;
