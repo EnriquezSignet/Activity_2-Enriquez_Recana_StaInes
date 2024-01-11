@@ -248,6 +248,29 @@ section {
   font-weight: normal;
 }
 
+.contact-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ffde59;
+  color: #3a0955;
+  font-size: 1.5rem;
+  padding: 0.9rem 3rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5rem;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 3rem;
+}
+
+.contact-button:hover {
+  background-color: #3a0955;
+  color: #ffde59;
+}
+
+.bottom-button-container {
+  margin-top: auto;
+}
+
 /* --- end --- */
 
 /* gallery */
