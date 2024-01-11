@@ -64,17 +64,13 @@
   }
 }
 
-@media (max-width: 456px) {
+@media (max-width: 450px) {
   html {
     font-size: 50%;
   }
 
   .home .content h3 {
     font-size: 4rem;
-  }
-
-  .adoption .heading h2 {
-    font-size: 2rem;
   }
 }
 @media screen and (max-width: 768px) {
