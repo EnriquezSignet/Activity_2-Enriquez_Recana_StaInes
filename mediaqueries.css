@@ -72,6 +72,10 @@
   .home .content h3 {
     font-size: 4rem;
   }
+
+  .adoption .heading h2 {
+    font-size: 4rem;
+  }
 }
 @media screen and (max-width: 768px) {
   #articles {
