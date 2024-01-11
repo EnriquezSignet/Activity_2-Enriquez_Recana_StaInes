@@ -881,20 +881,21 @@ body {
 }
 
 .merchandise .box-container {
-  max-width: 900px; /* Set your desired maximum width */
-  margin: 0 auto; /* Center the container horizontally on the page */
+  max-width: 900px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Set 4 columns */
   gap: 4rem;
-  text-align: center; /* Center text within each box */
-  height: auto;
+  text-align: center;
 }
 
 .merchandise .box-container .box:hover {
-  border: solid #ffde59 5px;
+  border: solid #ffde59 8px;
   background: transparent;
+  padding: 10px;
+  width: 110%;
+  height: 110%;
 }
-
 .merchandise .box-container .box img {
   height: 15.5rem;
   width: 15.5rem;
@@ -917,6 +918,78 @@ body {
   font-size: 1.5rem;
   color: white;
   padding: 0.5rem 0;
+}
+
+/* end */
+
+/* contact */
+
+.contact {
+  min-height: 100vh;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background: url(assets/home_bg.gif);
+  background-size: cover;
+  background-position: top;
+}
+
+.contact-container {
+  margin: 0 auto;
+}
+
+.contact-left {
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  background-color: #3a0955;
+}
+
+.contact-left-title h2 {
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #ffde59;
+  text-align: center;
+}
+
+.contact-left-title hr {
+  display: none;
+}
+
+.contact-inputs {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.contact-inputs::placeholder {
+  color: #666;
+}
+
+.contact-left button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background: #ffde59;
+  color: #3a0955;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-left button:hover {
+  background: #c262f7;
+
+
 }
 
 /* end */
