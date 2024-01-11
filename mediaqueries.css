@@ -64,7 +64,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 456px) {
   html {
     font-size: 50%;
   }
@@ -74,7 +74,7 @@
   }
 
   .adoption .heading h2 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 768px) {
