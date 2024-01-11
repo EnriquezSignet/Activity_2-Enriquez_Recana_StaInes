@@ -1,17 +1,5 @@
-@media (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
-  .header {
-    padding: 2rem;
-  }
-  section {
-    padding: 8rem 2rem;
-  }
-}
-
 @media (max-width: 768px) {
-  .html {
+  html {
     font-size: 50%;
   }
 
@@ -42,6 +30,7 @@
     margin: 2rem;
     font-size: 2rem;
   }
+
   .home {
     flex-direction: column;
     background-position: left;
@@ -62,12 +51,7 @@
   .deco-title {
     display: none;
   }
-}
 
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
 
   .home .content h3 {
     font-size: 4rem;
@@ -78,6 +62,7 @@
   }
 }
 @media screen and (max-width: 768px) {
+
   #articles {
     padding: 25px 0;
   }
@@ -111,13 +96,43 @@
     width: 100%;
     margin: 10px 0;
   }
-}
 
-@media (max-width: 768px) {
+  .merchandise .box-container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .merchandise .box {
+    padding: 1rem;
+  }
+
+  /* Center the containers within the media query */
+  .adoption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .cats_preview .preview img {
     height: 25rem;
   }
+
+  .slide-content {
+    margin: 0 10px;
+  }
+
+  .swiper-navBtn {
+    display: none;
+  }
 }
+
+
+
 @media (max-width: 450px) {
   html {
     font-size: 50%;
@@ -136,11 +151,10 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .slide-content {
-    margin: 0 10px;
-  }
-  .swiper-navBtn {
-    display: none;
+
+@media (max-width: 600px) {
+  .contact-inputs,
+  .contact-container {
+    width: 100%;
   }
 }

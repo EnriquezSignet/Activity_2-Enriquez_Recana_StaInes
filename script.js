@@ -20,6 +20,7 @@ function checkScreenWidth() {
   }
 }
 
+// To preview the clicked container
 let preveiwContainer = document.querySelector(".cats_preview");
 let previewBox = preveiwContainer.querySelectorAll(".preview");
 
@@ -43,6 +44,7 @@ previewBox.forEach((close) => {
   };
 });
 
+// swiper for gallery
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
   spaceBetween: 25,
