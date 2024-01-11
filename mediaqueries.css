@@ -87,7 +87,7 @@
   }
 
   .merchandise .box-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   .merchandise .box {
@@ -120,7 +120,7 @@
   }
 }
 
-/* Additional media queries */
+
 
 @media (max-width: 450px) {
   html {
@@ -137,5 +137,13 @@
 @media (min-width: 56rem) {
   .cards_item {
     width: 33.3333%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .contact-inputs,
+  .contact-container {
+    width: 100%;
   }
 }
